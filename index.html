@@ -5,8 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Component</title>
+    <style>
+         *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: #d5e1ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+        }
+        .card{
+            background-color: white;
+            color: #2e384c;
+            padding: 1rem;
+            border-radius: 4%;
+            width: 320px;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
+            border-radius: 4%;
+        }
+        .card__content_sub-heading{
+            color: #a7acb3;
+        }
+        
+        .card__content{
+            text-align: center;
+            padding: 1rem;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .card__content_heading{
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+        </style>
 </head>
 <body>
-    <h1>Day 1 - QR Component Challenge</h1>
+    <div class="card">
+        <div class="card__image">
+            <img src="images/image-qr-code.png" alt="qr_code">
+        </div>
+        <div class="card__content">
+            <h3 class="card__content_heading">Improve your front-end skills by building projects</h3>
+            <p class="card__content_sub-heading">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+    </div>
 </body>
 </html>
